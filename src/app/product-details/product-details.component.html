@@ -16,19 +16,26 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-color: green;">
+
+  <body style="background-color: whitesmoke;">
+    <h1>Product Details:</h1>
+    <br>
     <div class="container">
+
       <ng-container *ngIf="current_product">
+        <h1>
         Name: {{ current_product.product_name }}
-
+      </h1>
+      <h1>
         Qty: {{ current_product.product_quantity }}
-
+      </h1>
+      <h1>
         price: {{ current_product.product_price }}
-
+      </h1>
         <div>
           <span><button style="background-color: rgb(52, 62, 214);"(click)="backHandler()">Back</button></span>
           <span
-            ><button style="background-color: rgb(52, 62, 214);"(click)="deleteHandler(current_product.product_gen_id)">
+            ><button style="background-color: red;"(click)="deleteHandler(current_product.product_gen_id)">
               Delete
             </button></span
           >

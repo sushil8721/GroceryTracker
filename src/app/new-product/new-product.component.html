@@ -15,7 +15,7 @@
   />
 
 </head>
-<body style="background-color: green;">
+<body style="background-color: rgb(173, 62, 62);">
 
 <div class="container">
   <div class="row">
@@ -24,7 +24,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col" style="border: 1px solid grey;">
+    <div class="col">
       <ng-container >
         <form (ngSubmit)="createHandler(createProductForm)" #createProductForm="ngForm">
 
@@ -36,7 +36,7 @@
 
               <label for="inputEmail4">Price</label>
               <input type="number" [(ngModel)]="product_price" name="price" class="form-control" id="inputEmail2" placeholder="price">
-          <span><a routerLink='/'>Cancel</a></span>
+          <span><button style="background-color: red;" type="submit" class="btn btn-primary" routerLink='/'>Cancel</button></span>
 
           <span><button type="submit" class="btn btn-primary">Create</button></span>
         </form>
