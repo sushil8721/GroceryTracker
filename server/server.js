@@ -154,7 +154,7 @@ app.all("*", (req,res,next) => {
   res.sendFile(path.resolve("../dist/angTemplateProj/index.html"))
 });
 
-const PORT = process.env.PORT || 3009;
+const PORT = process.env.PORT || 3008;
 
 app.listen(PORT, function () {
   console.log('App is running!');
