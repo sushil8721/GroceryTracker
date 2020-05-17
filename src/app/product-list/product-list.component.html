@@ -12,7 +12,7 @@
   <!-- <img width="300" src="/assets/image/image.jpg"> -->
   <h1>Product List</h1>
   <div class="Button" style="margin-left: 970px;">
-  <button style="background-color: rgb(52, 214, 119);"(click)="createButton()">Add New Products</button>
+  <button style="background-color: rgb(52, 214, 119);"(click)="createButton()">Add New Product</button>
 </div>
   <table class="table table-striped table-dark">
     <thead>
@@ -33,19 +33,17 @@
         <td>{{val.product_price}}</td>
         <td><span style="margin-right:20px;"><button style="background-color: yellow;" (click)="editHandler(val._id)">Edit</button></span>
           <span style="margin-right:20px;"><button style="background-color: rgb(52, 214, 119);"(click)="detailsHandler(val._id)">Details</button></span>
-          <button style="background-color: rgb(216, 62, 62);">Delete</button>
+          <button style="background-color: rgb(216, 62, 62);" (click)="deleteButton(val._id)" >Delete</button>
+
         </td>
-
-
-
       </tr>
      </ng-container>
     </tbody>
   </table>
 
-  <div class="twelve columns" style="color: black; font-style: italic;  margin-top: 380px;">
+  <!-- <div class="twelve columns" style="color: black; font-style: italic;  margin-top: 380px;">
     <p style="padding-left: 666px; color: black;">&copy; 2020 Gurpinder Singh</p>
- </div>
+ </div> -->
 
 </body>
 </html>

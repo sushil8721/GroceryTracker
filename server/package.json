@@ -19,6 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "lib.cli": "^4.9.5",
     "mongoose-unique-validator": "^2.0.3"
   }

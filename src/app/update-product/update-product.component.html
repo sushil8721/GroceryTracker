@@ -58,12 +58,12 @@
       </form>
     </div>
 
-    <div class="row" *ngIf="warningMessage.length">
+    <div class="row" *ngIf="warningMessage&&warningMessage.length">
       <div class="col">
         {{ warningMessage }}
       </div>
     </div>
-    <div class="row" *ngIf="errorMessage.length">
+    <div class="row" *ngIf="errorMessage&&errorMessage.length">
       <div class="col">
         {{ errorMessage }}
       </div>

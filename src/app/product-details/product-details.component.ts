@@ -37,6 +37,7 @@ export class ProductDetailsComponent implements OnInit {
   deleteHandler(gen_id){
 
     this.productsManagmentService.delete(gen_id).subscribe(val=>{
+      this.router.navigate(["/products"]);
 
     })
 

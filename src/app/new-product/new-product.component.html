@@ -15,7 +15,7 @@
   />
 
 </head>
-<body style= "background-image:url('/assets/image/img.jpg') ; background-size: cover; background-attachment: fixed;   height: 763px;">
+<body style= "background-image:url('/assets/image/wal3.jpg') ; background-size: cover; background-attachment: fixed;   height: 763px;">
 
 <div class="container">
   <div class="row">
@@ -25,8 +25,8 @@
   </div>
   <div class="row">
     <div class="col">
-      <ng-container >
-        <form (ngSubmit)="createHandler(createProductForm)" #createProductForm="ngForm">
+<!--      <ng-container >-->
+        <form  name="form" (ngSubmit)="createProductForm.form.valid &&createHandler(createProductForm)" #createProductForm="ngForm">
 
               <label for="inputEmail4">Name</label>
               <input type="text" [(ngModel)]="product_name" name="name" class="form-control" id="inputEmail4" placeholder="name">
@@ -36,11 +36,11 @@
 
               <label for="inputEmail4">Price</label>
               <input type="number" [(ngModel)]="product_price" name="price" class="form-control" id="inputEmail2" placeholder="price">
-          <span><button style="background-color: red;" type="submit" class="btn btn-primary" routerLink='/'>Cancel</button></span>
+          <span><button style="background-color: red;" (click)="handleCancel">Cancel</button></span>
 
           <span><button type="submit" class="btn btn-primary">Create</button></span>
         </form>
-      </ng-container>
+<!--      </ng-container>-->
     </div>
   </div>
   <div class="row" *ngIf="warningMessage.length">
@@ -48,7 +48,7 @@
       {{warningMessage}}
     </div>
   </div>
-  <div class="row" *ngIf="errorMessage.length">
+  <div class="row" *ngIf=" errorMessage">
     <div class="col">
       {{errorMessage}}
     </div>

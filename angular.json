@@ -124,6 +124,13 @@
           }
         }
       }
-    }},
-  "defaultProject": "angTemplateProj"
+    }
+  },
+  "defaultProject": "angTemplateProj",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "sass"
+    }
+  }
+
 }

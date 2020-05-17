@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n  <title>PB09</title>\n</head>\n<body style=\"background-color: black; font-style: oblique;\">\n  <h1 style=\"margin-left: 600px; color: whitesmoke; \">Grocery Tracker</h1>\n  <router-outlet></router-outlet>\n\n</body>\n</html>\n\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n  <title>PB09</title>\n</head>\n<body style=\"background-image:url('/assets/image/market.jpg') ; background-size: cover; background-attachment: fixed;  height: 1000px;  font-style: oblique;\">\n  <h1 style=\"margin-left: 600px; color: whitesmoke; \">Grocery Tracker</h1>\n  <router-outlet></router-outlet>\n\n  <!-- <div class=\"twelve columns\" style=\"color: black; font-style: italic;  margin-top: 470px;\">\n    <p style=\"padding-left: 666px; color: black;\">&copy; 2020 Gurpinder Singh</p>\n </div> -->\n\n</body>\n</html>\n\n\n");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"/>\n  <meta\n    name=\"viewport\"\n    content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"\n  />\n\n  <link\n    rel=\"stylesheet\"\n    href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\"\n    integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\"\n    crossorigin=\"anonymous\"\n  />\n\n</head>\n<body style= \"background-image:url('/assets/image/img.jpg') ; background-size: cover; background-attachment: fixed;   height: 763px;\">\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col\">\n      <h1>New Product</h1>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col\">\n      <ng-container >\n        <form (ngSubmit)=\"createHandler(createProductForm)\" #createProductForm=\"ngForm\">\n\n              <label for=\"inputEmail4\">Name</label>\n              <input type=\"text\" [(ngModel)]=\"product_name\" name=\"name\" class=\"form-control\" id=\"inputEmail4\" placeholder=\"name\">\n\n              <label for=\"inputEmail4\">Qty</label>\n              <input type=\"number\" [(ngModel)]=\"product_quantity\" name=\"quantity\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"Qty\">\n\n              <label for=\"inputEmail4\">Price</label>\n              <input type=\"number\" [(ngModel)]=\"product_price\" name=\"price\" class=\"form-control\" id=\"inputEmail2\" placeholder=\"price\">\n          <span><button style=\"background-color: red;\" type=\"submit\" class=\"btn btn-primary\" routerLink='/'>Cancel</button></span>\n\n          <span><button type=\"submit\" class=\"btn btn-primary\">Create</button></span>\n        </form>\n      </ng-container>\n    </div>\n  </div>\n  <div class=\"row\" *ngIf=\"warningMessage.length\">\n    <div class=\"col\">\n      {{warningMessage}}\n    </div>\n  </div>\n  <div class=\"row\" *ngIf=\"errorMessage.length\">\n    <div class=\"col\">\n      {{errorMessage}}\n    </div>\n  </div>\n</div>\n<script\n  src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"\n  integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\"\n  crossorigin=\"anonymous\"\n></script>\n<script\n  src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"\n  integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\"\n  crossorigin=\"anonymous\"\n></script>\n<script\n  src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"\n  integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\"\n  crossorigin=\"anonymous\"\n></script>\n</body>\n</html>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"/>\n  <meta\n    name=\"viewport\"\n    content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"\n  />\n\n  <link\n    rel=\"stylesheet\"\n    href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\"\n    integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\"\n    crossorigin=\"anonymous\"\n  />\n\n</head>\n<body style= \"background-image:url('/assets/image/wal3.jpg') ; background-size: cover; background-attachment: fixed;   height: 763px;\">\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col\">\n      <h1>New Product</h1>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col\">\n<!--      <ng-container >-->\n        <form  name=\"form\" (ngSubmit)=\"createProductForm.form.valid &&createHandler(createProductForm)\" #createProductForm=\"ngForm\">\n\n              <label for=\"inputEmail4\">Name</label>\n              <input type=\"text\" [(ngModel)]=\"product_name\" name=\"name\" class=\"form-control\" id=\"inputEmail4\" placeholder=\"name\">\n\n              <label for=\"inputEmail4\">Qty</label>\n              <input type=\"number\" [(ngModel)]=\"product_quantity\" name=\"quantity\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"Qty\">\n\n              <label for=\"inputEmail4\">Price</label>\n              <input type=\"number\" [(ngModel)]=\"product_price\" name=\"price\" class=\"form-control\" id=\"inputEmail2\" placeholder=\"price\">\n          <span><button style=\"background-color: red;\" (click)=\"handleCancel\">Cancel</button></span>\n\n          <span><button type=\"submit\" class=\"btn btn-primary\">Create</button></span>\n        </form>\n<!--      </ng-container>-->\n    </div>\n  </div>\n  <div class=\"row\" *ngIf=\"warningMessage.length\">\n    <div class=\"col\">\n      {{warningMessage}}\n    </div>\n  </div>\n  <div class=\"row\" *ngIf=\" errorMessage\">\n    <div class=\"col\">\n      {{errorMessage}}\n    </div>\n  </div>\n</div>\n<script\n  src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"\n  integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\"\n  crossorigin=\"anonymous\"\n></script>\n<script\n  src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"\n  integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\"\n  crossorigin=\"anonymous\"\n></script>\n<script\n  src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"\n  integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\"\n  crossorigin=\"anonymous\"\n></script>\n</body>\n</html>\n");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-- Required meta tags -->\n    <meta charset=\"utf-8\" />\n    <meta\n      name=\"viewport\"\n      content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"\n    />\n\n    <!-- Bootstrap CSS -->\n    <link\n      rel=\"stylesheet\"\n      href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\"\n      integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\"\n      crossorigin=\"anonymous\"\n    />\n  </head>\n\n  <body style= \"background-image:url('/assets/image/wal3.jpg') ; background-size: cover; background-attachment: fixed;   height: 763px;\">\n    <h1>Product Details:</h1>\n    <br>\n    <div class=\"container\">\n\n      <ng-container *ngIf=\"current_product\">\n        <h1>\n        Name: {{ current_product.product_name }}\n      </h1>\n      <h1>\n        Qty: {{ current_product.product_quantity }}\n      </h1>\n      <h1>\n        price: {{ current_product.product_price }}\n      </h1>\n        <div>\n          <span><button style=\"background-color: rgb(52, 62, 214);\"(click)=\"backHandler()\">Back</button></span>\n          <span\n            ><button style=\"background-color: red;\"(click)=\"deleteHandler(current_product.product_gen_id)\">\n              Delete\n            </button></span\n          >\n        </div>\n      </ng-container>\n    </div>\n\n    <script\n      src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"\n      integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\"\n      crossorigin=\"anonymous\"\n    ></script>\n    <script\n      src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"\n      integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\"\n      crossorigin=\"anonymous\"\n    ></script>\n    <script\n      src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"\n      integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\"\n      crossorigin=\"anonymous\"\n    ></script>\n    <!--<script type=\"text/javascript\" src=\"./javascripts/cats.js\"></script>-->\n  </body>\n</html>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-- Required meta tags -->\n    <meta charset=\"utf-8\" />\n    <meta\n      name=\"viewport\"\n      content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"\n    />\n\n    <!-- Bootstrap CSS -->\n    <link\n      rel=\"stylesheet\"\n      href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\"\n      integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\"\n      crossorigin=\"anonymous\"\n    />\n  </head>\n\n  <body style= \"background-image:url('/assets/image/wal3.jpg') ; background-size: cover; background-attachment: fixed;   height: 763px;\">\n    <h1>Product Details:</h1>\n    <br>\n    <div class=\"container\">\n\n      <ng-container *ngIf=\"current_product\">\n        <h1>\n        Name: {{ current_product.product_name }}\n      </h1>\n      <h1>\n        Qty: {{ current_product.product_quantity }}\n      </h1>\n      <h1>\n        price: {{ current_product.product_price }}\n      </h1>\n        <div>\n          <span><button style=\"background-color: rgb(52, 62, 214);\"(click)=\"backHandler()\">Back</button></span>\n          <span\n            ><button style=\"background-color: red;\"(click)=\"deleteHandler(current_product._id)\">\n              Delete </button></span>\n        </div>\n      </ng-container>\n    </div>\n\n    <script\n      src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"\n      integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\"\n      crossorigin=\"anonymous\"\n    ></script>\n    <script\n      src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"\n      integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\"\n      crossorigin=\"anonymous\"\n    ></script>\n    <script\n      src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"\n      integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\"\n      crossorigin=\"anonymous\"\n    ></script>\n    <!--<script type=\"text/javascript\" src=\"./javascripts/cats.js\"></script>-->\n  </body>\n</html>\n");
 
 /***/ }),
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n  <title>Document</title>\n  <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\n</head>\n<body style= \"background-image:url('/assets/image/img.jpg') ; background-size: cover; background-attachment: fixed;   height: auto;\">\n\n  <!-- <img width=\"300\" src=\"/assets/image/image.jpg\"> -->\n  <h1>Product List</h1>\n  <div class=\"Button\" style=\"margin-left: 970px;\">\n  <button style=\"background-color: rgb(52, 214, 119);\"(click)=\"createButton()\">Add New Products</button>\n</div>\n  <table class=\"table table-striped table-dark\">\n    <thead>\n      <tr>\n        <!-- <th scope=\"col\">ID</th> -->\n        <th scope=\"col\">Name</th>\n        <th scope=\"col\">Qty</th>\n        <th scope=\"col\">Price</th>\n        <th scope=\"col\">Action</th>\n      </tr>\n    </thead>\n    <tbody>\n      <ng-container *ngIf=\"allProducts\">\n      <tr *ngFor=\"let val of allProducts\">\n        <!-- <th scope=\"row\">{{val._id}}</th> -->\n        <td>{{val.product_name}}</td>\n        <td>{{val.product_quantity}}</td>\n        <td>{{val.product_price}}</td>\n        <td><span style=\"margin-right:20px;\"><button style=\"background-color: yellow;\" (click)=\"editHandler(val._id)\">Edit</button></span>\n          <span style=\"margin-right:20px;\"><button style=\"background-color: rgb(52, 214, 119);\"(click)=\"detailsHandler(val._id)\">Details</button></span>\n          <button style=\"background-color: rgb(216, 62, 62);\">Delete</button>\n        </td>\n\n\n\n      </tr>\n     </ng-container>\n    </tbody>\n  </table>\n\n  <div class=\"twelve columns\" style=\"color: black; font-style: italic;  margin-top: 380px;\">\n    <p style=\"padding-left: 666px; color: black;\">&copy; 2020 Gurpinder Singh</p>\n </div>\n\n</body>\n</html>\n\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n  <title>Document</title>\n  <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\n</head>\n<body style= \"background-image:url('/assets/image/img.jpg') ; background-size: cover; background-attachment: fixed;   height: auto;\">\n\n  <!-- <img width=\"300\" src=\"/assets/image/image.jpg\"> -->\n  <h1>Product List</h1>\n  <div class=\"Button\" style=\"margin-left: 970px;\">\n  <button style=\"background-color: rgb(52, 214, 119);\"(click)=\"createButton()\">Add New Product</button>\n</div>\n  <table class=\"table table-striped table-dark\">\n    <thead>\n      <tr>\n        <!-- <th scope=\"col\">ID</th> -->\n        <th scope=\"col\">Name</th>\n        <th scope=\"col\">Qty</th>\n        <th scope=\"col\">Price</th>\n        <th scope=\"col\">Action</th>\n      </tr>\n    </thead>\n    <tbody>\n      <ng-container *ngIf=\"allProducts\">\n      <tr *ngFor=\"let val of allProducts\">\n        <!-- <th scope=\"row\">{{val._id}}</th> -->\n        <td>{{val.product_name}}</td>\n        <td>{{val.product_quantity}}</td>\n        <td>{{val.product_price}}</td>\n        <td><span style=\"margin-right:20px;\"><button style=\"background-color: yellow;\" (click)=\"editHandler(val._id)\">Edit</button></span>\n          <span style=\"margin-right:20px;\"><button style=\"background-color: rgb(52, 214, 119);\"(click)=\"detailsHandler(val._id)\">Details</button></span>\n          <button style=\"background-color: rgb(216, 62, 62);\" (click)=\"deleteButton(val._id)\" >Delete</button>\n\n        </td>\n      </tr>\n     </ng-container>\n    </tbody>\n  </table>\n\n  <!-- <div class=\"twelve columns\" style=\"color: black; font-style: italic;  margin-top: 380px;\">\n    <p style=\"padding-left: 666px; color: black;\">&copy; 2020 Gurpinder Singh</p>\n </div> -->\n\n</body>\n</html>\n\n\n");
 
 /***/ }),
 
@@ -97,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n    <link\n      rel=\"stylesheet\"\n      href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\"\n      integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\"\n      crossorigin=\"anonymous\"\n    />\n  </head>\n  <body style= \"background-image:url('/assets/image/wal3.jpg') ; background-size: cover; background-attachment: fixed;   height: 763px;\">\n    <div class=\"container\">\n      <h1>Update Product</h1>\n\n      <form\n        (ngSubmit)=\"editHandler(createProductForm)\"\n        #createProductForm=\"ngForm\"\n      >\n        <label for=\"inputEmail4\">Name</label>\n        <input\n          type=\"text\"\n          [(ngModel)]=\"product_name\"\n          name=\"name\"\n          class=\"form-control\"\n          id=\"inputEmail4\"\n          placeholder=\"title\"\n        />\n\n        <label for=\"inputEmail4\">Qty</label>\n        <input\n          type=\"number\"\n          [(ngModel)]=\"product_quantity\"\n          name=\"quantity\"\n          class=\"form-control\"\n          id=\"inputEmail3\"\n          placeholder=\"Qty\"\n        />\n\n        <label for=\"inputEmail4\">Price</label>\n        <input\n          type=\"number\"\n          [(ngModel)]=\"product_price\"\n          name=\"price\"\n          class=\"form-control\"\n          id=\"inputEmail2\"\n          placeholder=\"price\"\n        />\n\n        <span><button style=\"background-color: red;\" type=\"submit\" class=\"btn btn-primary\" routerLink='/'>Cancel</button></span>\n\n        <span\n          ><button type=\"submit\" class=\"btn btn-primary\">Update</button></span\n        >\n      </form>\n    </div>\n\n    <div class=\"row\" *ngIf=\"warningMessage.length\">\n      <div class=\"col\">\n        {{ warningMessage }}\n      </div>\n    </div>\n    <div class=\"row\" *ngIf=\"errorMessage.length\">\n      <div class=\"col\">\n        {{ errorMessage }}\n      </div>\n    </div>\n\n    <script\n      src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"\n      integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\"\n      crossorigin=\"anonymous\"\n    ></script>\n    <script\n      src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"\n      integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\"\n      crossorigin=\"anonymous\"\n    ></script>\n    <script\n      src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"\n      integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\"\n      crossorigin=\"anonymous\"\n    ></script>\n  </body>\n</html>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n    <link\n      rel=\"stylesheet\"\n      href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\"\n      integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\"\n      crossorigin=\"anonymous\"\n    />\n  </head>\n  <body style= \"background-image:url('/assets/image/wal3.jpg') ; background-size: cover; background-attachment: fixed;   height: 763px;\">\n    <div class=\"container\">\n      <h1>Update Product</h1>\n\n      <form\n        (ngSubmit)=\"editHandler(createProductForm)\"\n        #createProductForm=\"ngForm\"\n      >\n        <label for=\"inputEmail4\">Name</label>\n        <input\n          type=\"text\"\n          [(ngModel)]=\"product_name\"\n          name=\"name\"\n          class=\"form-control\"\n          id=\"inputEmail4\"\n          placeholder=\"title\"\n        />\n\n        <label for=\"inputEmail4\">Qty</label>\n        <input\n          type=\"number\"\n          [(ngModel)]=\"product_quantity\"\n          name=\"quantity\"\n          class=\"form-control\"\n          id=\"inputEmail3\"\n          placeholder=\"Qty\"\n        />\n\n        <label for=\"inputEmail4\">Price</label>\n        <input\n          type=\"number\"\n          [(ngModel)]=\"product_price\"\n          name=\"price\"\n          class=\"form-control\"\n          id=\"inputEmail2\"\n          placeholder=\"price\"\n        />\n\n        <span><button style=\"background-color: red;\" type=\"submit\" class=\"btn btn-primary\" routerLink='/'>Cancel</button></span>\n\n        <span\n          ><button type=\"submit\" class=\"btn btn-primary\">Update</button></span\n        >\n      </form>\n    </div>\n\n    <div class=\"row\" *ngIf=\"warningMessage&&warningMessage.length\">\n      <div class=\"col\">\n        {{ warningMessage }}\n      </div>\n    </div>\n    <div class=\"row\" *ngIf=\"errorMessage&&errorMessage.length\">\n      <div class=\"col\">\n        {{ errorMessage }}\n      </div>\n    </div>\n\n    <script\n      src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"\n      integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\"\n      crossorigin=\"anonymous\"\n    ></script>\n    <script\n      src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"\n      integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\"\n      crossorigin=\"anonymous\"\n    ></script>\n    <script\n      src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"\n      integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\"\n      crossorigin=\"anonymous\"\n    ></script>\n  </body>\n</html>\n");
 
 /***/ }),
 
@@ -596,44 +596,55 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _products_managment_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../products-managment.service */ "./src/app/products-managment.service.ts");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 
 let NewProductComponent = class NewProductComponent {
-    constructor(productsManagmentService, cdRef) {
+    constructor(productsManagmentService, cdRef, router) {
         this.productsManagmentService = productsManagmentService;
         this.cdRef = cdRef;
+        this.router = router;
         this.product_name = "";
         this.product_price = 0;
         this.product_quantity = 0;
         this.warningMessage = "";
     }
-    ngOnInit() { }
+    ngOnInit() {
+    }
     createHandler(data) {
         console.log(data.value);
         this.productsManagmentService.createProduct(data.value).subscribe(result => {
-            // this.errorMessage = '';
-            console.log(result);
+            this.router.navigate(["/"]);
         }, error => (this.errorMessage = error.error.errors[0].detail));
+    }
+    handleCancel() {
+        this.router.navigate(["/products"]);
     }
     ngAfterViewChecked() {
         if (this.product_name.length < 3) {
             this.warningMessage = "Name must be more than 3 chracter";
+            this.cdRef.detectChanges();
         }
         else if (this.product_price < 0) {
             this.warningMessage = "Number must be greater than 0 ";
+            this.cdRef.detectChanges();
         }
         else if (this.product_quantity < 0) {
             this.warningMessage = "Number must be greater than 0 ";
+            this.cdRef.detectChanges();
         }
         else {
             this.warningMessage = "";
+            this.cdRef.detectChanges();
         }
     }
 };
 NewProductComponent.ctorParameters = () => [
     { type: _products_managment_service__WEBPACK_IMPORTED_MODULE_1__["ProductsManagmentService"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
 ];
 NewProductComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
@@ -697,6 +708,7 @@ let ProductDetailsComponent = class ProductDetailsComponent {
     }
     deleteHandler(gen_id) {
         this.productsManagmentService.delete(gen_id).subscribe(val => {
+            this.router.navigate(["/products"]);
         });
     }
 };
@@ -745,9 +757,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _products_managment_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../products-managment.service */ "./src/app/products-managment.service.ts");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
+// @ts-ignore
 
 
+// @ts-ignore
 
+// @ts-ignore
 let ProductListComponent = class ProductListComponent {
     constructor(productsManagmentService, router) {
         this.productsManagmentService = productsManagmentService;
@@ -760,6 +775,7 @@ let ProductListComponent = class ProductListComponent {
         });
     }
     editHandler(prodId) {
+        // alert("");
         this.router.navigate([`/products/${prodId}/edit`]);
     }
     detailsHandler(prodId) {
@@ -768,6 +784,11 @@ let ProductListComponent = class ProductListComponent {
     createButton(prodId) {
         this.router.navigate(['/products/new']);
     }
+    deleteButton(prodId) {
+        alert('A Product has been deleted, please reload to see changes!');
+        // this.router.navigate(['/products/new']);
+        this.productsManagmentService.delete(prodId).subscribe(() => { });
+    }
 };
 ProductListComponent.ctorParameters = () => [
     { type: _products_managment_service__WEBPACK_IMPORTED_MODULE_2__["ProductsManagmentService"] },
@@ -775,7 +796,7 @@ ProductListComponent.ctorParameters = () => [
 ];
 ProductListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
-        selector: "app-product-list",
+        selector: 'app-product-list',
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./product-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/product-list/product-list.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./product-list.component.scss */ "./src/app/product-list/product-list.component.scss")).default]
     })
@@ -1022,7 +1043,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/pbx09/Desktop/angTemplateProj/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/pbx09/Desktop/GroceryTracker/src/main.ts */"./src/main.ts");
 
 
 /***/ })
